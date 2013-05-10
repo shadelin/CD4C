@@ -1,0 +1,1131 @@
+<style>
+html{
+font-family:"微软雅黑";
+}
+table{
+width:100%;font-size:11px;
+}
+caption{
+font-size:200%;padding:0.5em 0;text-align:left;
+}
+table,td,th{
+margin:0;padding:0;border-collapse:collapse;border:1px solid #dddd;
+}
+td,th{
+padding:0.25em 0.5em;
+}
+th{
+background:#ffe;color:#666;
+}
+
+</style>
+
+<h1>Prometheus</h1>
+<p>It sucks, but you gonna love it.</p>
+<table>
+<thead>
+<tr>
+	<th>Broswer</th>
+	<th>Serials</th>
+	<th>Token</th>
+	<th>Description</th>
+</tr>
+</thead>
+<caption>Broswer</caption>
+	<tbody>
+		<tr>
+			<th rowspan="17">MSIE</th>
+			<th rowspan="8">IE</th>
+			<td>MSIE 6.0</td>
+			<td>Microsoft Internet Explorer 6</td>
+		</tr>
+		<tr>
+			<td>MSIE 7.0</td>
+			<td>Windows Internet Explorer 7</td>
+		</tr>
+		<tr>
+			<td>MSIE 8.0</td>
+			<td rowspan="2">Internet Explorer 8</td>
+		</tr>
+		<tr>
+			<td>Trident/4.0</td>
+		</tr>
+		<tr>
+			<td>MSIE 9.0</td>
+			<td rowspan="2">Internet Explorer 9</td>
+		</tr>
+		<tr>
+			<td>Trident/5.0</td>
+		</tr>
+		<tr>
+			<td>MSIE 10.0</td>
+			<td rowspan="2">Internet Explorer 10</td>
+		</tr>
+		<tr>
+			<td>Trident/6.0</td>
+		</tr>
+		<tr>
+			<th rowspan="3">Pocket IE</th>
+			<td rowspan="3">MSPIE</td>
+			<td>Pocker IE 1/1.1 introduced in Windows CE 1.0, does not derive from the Internet Explorer code and was written from scratch</td>
+		</tr>
+		<tr>
+			<td>Pocker IE 2/3, introduced with Windows CE 2.0/2.1</td>
+		</tr>
+		<tr>
+			<td>Pocker IE 4</td>
+		</tr>
+		<tr>
+			<th rowspan="8">IE Mobile</th>
+			<td>MSIEMobile 6.0</td>
+			<td>IE Mobile 6.0, included with WM6.5 and Zune HD</td>
+		</tr>
+		<tr>
+			<td>IEMobile/7.0</td>
+			<td rowspan="2">IE Mobile 7.0, included with Windows CE 7</td>
+		</tr>
+		<tr>
+			<td>Trident/3.1</td>
+		</tr>
+		<tr>
+			<td>IEMobile 7.11</td>
+			<td>IE Mobile 7.11</td>
+		</tr>
+		<tr>
+			<td>IEMobile/9.0</td>
+			<td rowspan="2">IE Mobile 9.0, included with Windows Phone</td>
+		</tr>
+		<tr>
+			<td>Trident/5.0</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th rowspan="2" colspan="2">GO Browser</th>
+			<td rowspan="2">GoBrowser</td>
+			<td>GO Browser 1.6/2.0 for Symbian, </td>
+		</tr>
+		<tr>
+			<td>GO Browser for Android 2.x</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th rowspan="2" colspan="2">webOS Broswer</th>
+			<td>webOSBrowser || wOSBrowser</td>
+			<td>wOSBrowser is part of the HP webOS operating system by Hewlett-Packard</td>
+		</tr>
+		<tr>
+			<td>webOSBrowser || wOSBrowser && TouchPad || hp-tablet</td>
+			<td>webOS on Tablet with touch</td>
+		</tr>
+	</tbody>
+
+	<tbody>
+		<tr>
+			<th rowspan="5">Opera</th>
+			<th>Opera Desktop</th>
+			<td>Opera && X11 || Macintosh || Windows NT</td>
+			<td>Opera Desktop</td>
+		</tr>
+		<tr>
+			<th>Opera Mobile</th>
+			<td>Opera && Android || S60 || SymbOS</td>
+			<td>Opera Mobile</td>
+		</tr>
+		<tr>
+			<th>Opera TV</th>
+			<td>Opera TV</td>
+			<td>Opera TV</td>
+		</tr>
+	</tbody>
+
+	<tbody>
+		<tr>
+			<th rowspan="6">Safari</th>
+			<th>Safari 1</th>
+			<td>Safari/85 || Safari/125 || Safari/312</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Safari 2</th>
+			<td>Safari/412 || Safari/416 || Safari/417 || Safari/419</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Safari 3</th>
+			<td>Safari/522 || Safari/523 || Safari/525 || Safari/528</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Safari 4</th>
+			<td>Safari/526 || Safari/528 || Safari/530 || Safari/531</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Safari 5</th>
+			<td>Safari/533 || Safari/534 || Safari/537 || Safari/7533 || Safari/7534</td>
+			<td>7xxx for iPad</td>
+		</tr>
+		<tr>
+			<th>Safari 6</th>
+			<td>Safari/536 || Safari/8536</td>
+			<td>8xxx for iPad</td>
+		</tr>
+	</tbody>
+
+	<tbody>
+		<tr>
+			<th rowspan="14">UC Browser</th>
+			<th rowspan="2">UC Android U3</th>
+			<td>Linux && UCBrowser/8.6.0.199 U2/1.0.0 Mobile</td>
+			<td>极速模式开启状态</td>
+		</tr>
+		<tr>
+			<td>Linux && UCBrowser/8.6.0.199 U3/0.8.0 Mobile</td>
+			<td>版极速模式关闭状态</td>
+		</tr>
+		<tr>
+			<th rowspan="2">UC Android 平台灵动版</th>
+			<td>Linux && UCBrowser/8.6.0.199 U2/1.0.0 Mobile</td>
+			<td>极速模式开启状态</td>
+		</tr>
+		<tr>
+			<td>UCBrowser/8.6.0.199 Mobile</td>
+			<td>极速模式关闭状态</td>
+		</tr>
+		<tr>
+			<th rowspan="2">UC iPhone</th>
+			<td>iOS && UCBrowser/8.6.0.199 U2/1.0.0 Mobile</td>
+			<td>极速模式开启状态</td>
+		</tr>
+		<tr>
+			<td>UCBrowser/8.6.0.199 Mobile</td>
+			<td>版极速模式关闭状态</td>
+		</tr>
+		<tr>
+			<th>UC iPad</th>
+			<td>iPad && UCBrowser/8.6.0.199 U3/0.8.0</td>
+			<td>极速模式开启状态</td>
+		</tr>
+		<tr>
+			<th rowspan="2">UC WP</th>
+			<td>Windows && UCBrowser/8.6.0.199 U2/1.0.0 Mobile</td>
+			<td>极速模式开启状态</td>
+		</tr>
+		<tr>
+			<td>自带的 IE 浏览器手机版 UA</td>
+			<td>版极速模式关闭状态</td>
+		</tr>
+		<tr>
+			<th rowspan="5">UC Symbian/JME</th>
+			<td>UCWEB8.9.0.253/50/999</td>
+			<td>中文版</td>
+		</tr>
+		<tr>
+			<td>UCBrowser/8.6.0.199 U2/1.0.0 Mobile</td>
+			<td>Symbian Mobile 国际版</td>
+		</tr>
+		<tr>
+			<td>UCBrowser/8.9.0.25</td>
+			<td>Symbian Desktop 国际版</td>
+		</tr>
+		<tr>
+			<td>UCBrowser/8.6.0.202 U2/1.0.0 Mobile</td>
+			<td>JME Mobile 国际版</td>
+		</tr>
+		<tr>
+			<td>UCBrowser/8.9.0.25</td>
+			<td>JME Desktop 国际版</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">Maxthon</th>
+			<td>Maxthon</td>
+			<td>Maxthon</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th rowspan="10">M-QQ Browser</th>
+			<th rowspan="2">for Android</th>
+			<td>MQQBrowser && Adr</td>
+			<td>自有内核</td>
+		</tr>
+		<tr>
+			<td>MQQBrowser && Android || Linux</td>
+			<td>系统内核</td>
+		</tr>
+		<tr>
+			<th rowspan="2">for iPhone</th>
+			<td>MQQBrowser && iOS</td>
+			<td>自有内核</td>
+		</tr>
+		<tr>
+			<td>MQQBrowser && iPhone</td>
+			<td>系统内核</td>
+		</tr>
+		<tr>
+			<th>for iPad</th>
+			<td>MQQBrowser && iOS</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>for Symbian</th>
+			<td>MQQBrowser</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>for WP7</th>
+			<td>MQQBrowser && wp7</td>
+			<td>自有内核用wp7代替平台标识</td>
+		</tr>
+		<tr>
+			<th>for WM</th>
+			<td>MQQBrowser</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>for MTK</th>
+			<td>MQQBrowser</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>for JME/BB</th>
+			<td>MQQBrowser</td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">360 Browser</th>
+			<td>360se || 360browser</td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">Sogou Browser</th>
+			<td>SE && MetaSr</td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">Baidu Browser</th>
+			<td>baidubrowser</td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">Dolphin Browser</th>
+			<td>Dolfin</td>
+			<td>Dolphin is a Webkit-touting web browser developed by Samsung.</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th rowspan="19">WAP Broswers</th>
+			<th>Klondike</th>
+			<td>Klondike</td>
+			<td>Klondike by Apache Software Consulting</td>
+		</tr>
+		<tr>
+			<th>WapTiger</th>
+			<td>WapTiger</td>
+			<td>WapTiger</td>
+		</tr>
+		<tr>
+			<th>WinWAP</th>
+			<td>WinWAP</td>
+			<td>WinWAP</td>
+		</tr>
+		<tr>
+			<th>jBrowser</th>
+			<td>jBrowser</td>
+			<td>jBrowser by Jataayu</td>
+		</tr>
+		<tr>
+			<th>KBrowser</th>
+			<td>4thpass</td>
+			<td>KBrowser</td>
+		</tr>
+		<tr>
+			<th>WapIDE</th>
+			<td>WapIDE</td>
+			<td>WapIDE by Ericsson</td>
+		</tr>
+		<tr>
+			<th>Opera Mini</th>
+			<td>Opera Mini</td>
+			<td>Opera Mini</td>
+		</tr>
+		<tr>
+			<th>NetFront</th>
+			<td>NetFront</td>
+			<td>NetFront</td>
+		</tr>
+		<tr>
+			<th>Obigo Internet Browser</th>
+			<td>Obigo Internet Browser 2.0 || ObigoInternetBrowser/2.0</td>
+			<td>Obigo Internet Browser 2.0 for Philips</td>
+		</tr>
+		<tr>
+			<th>Motorola Internet Browser</th>
+			<td>MOT- && MIB</td>
+			<td>The MIB is a microbrowser optimized for use with a wide variety of current and next generation wireless devices.</td>
+		</tr>
+		<tr>
+			<th>-</th>
+			<td>Mozilla/1.22 && Cellphone</td>
+			<td>SONY CMD-J,CMD-Z</td>
+		</tr>
+		<tr>
+			<th>-</th>
+			<td>Nokia-MIT-Browser/3.0</td>
+			<td>Nokia Mobile Internet Toolkit 3.0</td>
+		</tr>
+		<tr>
+			<th>-</th>
+			<td>Nokia-WAP-Toolkit/2.0</td>
+			<td>Nokia WAP Toolkit</td>
+		</tr>
+		<tr>
+			<th>SEMC Browser</th>
+			<td>SEMC-Browser</td>
+			<td>Sony Ericsson's SEMC-Browser</td>
+		</tr>
+		<tr>
+			<th>UP.Broswer</th>
+			<td>UP.Broswer || UP.Link</td>
+			<td>UP.Broswer and .Link Server by Unwired Planet(Openwave).</td>
+		</tr>
+		<tr>
+			<th>CLDC</th>
+			<td>CLDC-1.0</td>
+			<td>CLDC (Connected Limited Device Configuration) for mobile device applictions based on J2ME</td>
+		</tr>
+		<tr>
+			<th>MIDP</th>
+			<td>MIDP</td>
+			<td>MIDP (Mobile Information Device Profile), based on CLDC configuration, HTTP supported, for mobile device applictions based on J2ME</td>
+		</tr>
+		<tr>
+			<th>MTK</th>
+			<td>MAUI WAP Browser || Maui Browser </td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>-</th>
+			<td>WAP1 || wap1 || wap-1 || WAP2 || wap2 || wap-2 || WAP.Browser</td>
+			<td>Genernal string</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">Robots</th>
+			<td>spider || bot || crawl || search || jigsaw || w3c_validator</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+<table>
+<thead>
+<tr>
+	<th>Platform</th>
+	<th>Serials</th>
+	<th>Token</th>
+	<th>Description</th>
+</tr>
+</thead>
+<caption>Platform</caption>
+	<tbody>
+		<tr>
+			<th rowspan="12">Windows</th>
+			<th>Windows CE</th>
+			<td>Windows CE</td>
+			<td>1.0-7.0</td>
+		</tr>
+		<tr>
+			<th>Pocket PC</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Windows Mobile 2003</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Windows Mobile 5</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Windows Mobile 6</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Windows Phone 7</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Windows Phone 8</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Windows 9x</th>
+			<td>Win95 || Windows 95 || Windows 98 || Win 9x || Windows ME</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Windows XP</th>
+			<td>Windows NT 5.1</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Windows Vista/7</th>
+			<td>Windows NT 6.0 || Windows NT 6.1</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Windows 8</th>
+			<td>Windows NT 6.2</td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">Mac OS</th>
+			<td>Macintosh</td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">MIUI</th>
+			<td>MI-ONE || MI 2</td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">OPhone</th>
+			<td>OPhone</td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">YunOS</th>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th rowspan="2" colspan="2">Java ME</th>
+			<td>JRE</td>
+			<td>Java 1.1.x</td>
+		</tr>
+		<tr>
+			<td>Java</td>
+			<td>Java 1.4.x</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th rowspan="11">Android</th>
+			<th>Android 1.0.x</th>
+			<td>Android 1.0</td>
+			<td>Android 1.0/1.0.3</td>
+		</tr>
+		<tr>
+			<th>Android 1.5</th>
+			<td>Android 1.5</td>
+			<td>Android 1.5 Cupcake</td>
+		</tr>
+		<tr>
+			<th>Android 1.6</th>
+			<td>Android 1.6</td>
+			<td>Android 1.6 Donut</td>
+		</tr>
+		<tr>
+			<th>Android 2.0/2.1</th>
+			<td>Android 2.1 || Android Eclair</td>
+			<td>Android 2.0/2.1 Eclair</td>
+		</tr>
+		<tr>
+			<th>Android 2.2.x</th>
+			<td>Android 2.2</td>
+			<td>Android 2.2 Froyo</td>
+		</tr>
+		<tr>
+			<th>Android 2.3.x</th>
+			<td>Android 2.3</td>
+			<td>Android 2.3 Gingerbread</td>
+		</tr>
+		<tr>
+			<th>Android 3.x</th>
+			<td>Android 3 || Android/3</td>
+			<td>Android 3.x Honeycomb</td>
+		</tr>
+		<tr>
+			<th>Android 4.0.x</th>
+			<td>Android 4.0 || Android-4.0</td>
+			<td>Android 4.0.x Ice Cream Sandwich</td>
+		</tr>
+		<tr>
+			<th>Android 4.0.x</th>
+			<td>Android 4.0 || Android-4.0</td>
+			<td>Android 4.0.x Ice Cream Sandwich</td>
+		</tr>
+		<tr>
+			<th>Android 4.1.x</th>
+			<td>Android 4.1</td>
+			<td>Android 4.1.x Jelly Bean</td>
+		</tr>
+		<tr>
+			<th>Android 4.2</th>
+			<td>Android 4.2</td>
+			<td>Android 4.2 Jelly Bean</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th rowspan="2" colspan="2">Bada</th>
+			<td>Bada/1</td>
+			<td>Bada 1.0/1.2</td>
+		</tr>
+		<tr>
+			<td>Bada/2</td>
+			<td>Bada 2.0</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">Firefox OS</th>
+			<td>Firefox/14.0 || Firefox 17.0</td>
+			<td>Firefox OS, also known as B2G</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">Palm OS</th>
+			<td>Palm OS</td>
+			<td>Palm OS for PDAs</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">webOS</th>
+			<td>webOS || hpwOS</td>
+			<td>webOS by Hewlett-Packard</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th rowspan="6">RIM</th>
+			<th>BlackBerry 4.2 to 5.0</th>
+			<td>BlackBerry9000</td>
+			<td>BlackBerry 4.2 to 5.0</td>
+		</tr>
+		<tr>
+			<th>BlackBerry 6/7</th>
+			<td>BlackBerry && Mozilla</td>
+			<td>BlackBerry 6/7</td>
+		</tr>
+		<tr>
+			<th rowspan="2">BlackBerry 10</th>
+			<td>BB10 && Kbd</td>
+			<td>BlackBerry 10, Q10 without touch</td>
+		</tr>
+		<tr>
+			<td>BB10 && Touch</td>
+			<td>BlackBerry 10, Z10 with touch</td>
+		</tr>
+		<tr>
+			<th>BlackBerry Tablet OS 1</th>
+			<td>PlayBook || RIM Tablet OS 1</td>
+			<td>BlackBerry Tablet OS 1</td>
+		</tr>
+		<tr>
+			<th>BlackBerry Tablet OS 2</th>
+			<td>PlayBook || RIM Tablet OS 2</td>
+			<td>BlackBerry Tablet OS 2</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th rowspan="6">iOS</th>
+			<th>iOS</th>
+			<td>iPhone || iPad</td>
+			<td>iOS</td>
+		</tr>
+		<tr>
+			<th>iOS 4</th>
+			<td>iPhone OS 4</td>
+			<td>iOS 4</td>
+		</tr>
+		<tr>
+			<th>iOS 5</th>
+			<td>iPhone || iPad && OS 5</td>
+			<td>iOS 5</td>
+		</tr>
+		<tr>
+			<th>iOS 6</th>
+			<td>iPhone || iPad && OS 6</td>
+			<td>iOS 6</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th rowspan="8">Symbian</th>
+			<th>Symbian</th>
+			<td>SymbianOS || SymbOS || Series80</td>
+			<td>S80, 9210,9300,9500;S60 1.2 to 2.6, N90,N80,7610,6600,6680,6630,N-Gage,3650</td>
+		</tr>
+		<tr>
+			<th>S40</th>
+			<td>Series40</td>
+			<td>Nokia 311/X3-02</td>
+		</tr>
+		<tr>
+			<th>S60 with OSSB3.0</th>
+			<td>SymbianOS/9.1</td>
+			<td>In S60 3rd Edition this browser is not the default browser. It may be featured in the Active Standby menu bar or in the menu grid, but it will not be opened when URL is selected in another application</td>
+		</tr>
+		<tr>
+			<th>S60 with WAP</th>
+			<td>Series60/3.0 || S60/3.0</td>
+			<td>The original S60 WAP browser is still the default browser in S60 3rd Edition, but has been renamed “Services” </td>
+		</tr>
+		<tr>
+			<th>S60 3rd Pack 1</th>
+			<td>SymbianOS/9.2 || Series60/3.1</td>
+			<td>In S60 3rd Edition Feature Pack 1 the Nokia Web browser (OSS 3.1) is the only browser included. All invocation of a browser will launch this browser.</td>
+		</tr>
+		<tr>
+			<th>S60 3rd Pack 2</th>
+			<td>SymbianOS/9.3 || Series60/3.2</td>
+			<td>S60 3rd Edition FP2 devices can either use OSS Browser 3.2 or Browser 7.1. Early 3.2 devices were shipped with OSS Browser 3.2, but some of them may be upgraded to Browser 7.1 via firmware update. 7.1 browser is pre-installed in the following 3.2 devices: Nokia 6710 Navigator, Nokia 6730 classic, Nokia N86, Nokia E52, Nokia E55, and Nokia E72.</td>
+		</tr>
+		<tr>
+			<th>S60 5th</th>
+			<td>SymbianOS/9.4 || Series60/5.0</td>
+			<td>S60 5th edition devices can either use Browser 7.0 or Browser 7.1.</td>
+		</tr>
+		<tr>
+			<th>Symbian^3</th>
+			<td>Symbian/3 || Series60/5.2 || Series60/5.3</td>
+			<td>Symbian^3 devices have Browser 7.2 installed. Update to Symbian Anna will bring Browser 7.3 to these devices.</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">Maemo</th>
+			<td>Maemo</td>
+			<td>Known as Internet Tablet OS, for N770,N800,N810,N900,N950</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th colspan="2">MeeGo</th>
+			<td>MeeGo</td>
+			<td>MeeGo Harmattan use in Nokia N9,N900,N950 and Samsung Netbook NP-N100.</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th rowspan="8">Linux</th>
+			<th>Debian</th>
+			<td>Linux && Debian</td>
+			<td>Debian</td>
+		</tr>
+		<tr>
+			<th>CentOS</th>
+			<td>Linux && CentOS || centos</td>
+			<td>CentOS</td>
+		</tr>
+		<tr>
+			<th>Redhat</th>
+			<td>redhat || Red Hat</td>
+			<td>CentOS</td>
+		</tr>
+		<tr>
+			<th>Ubuntu</th>
+			<td>Linux && Ubuntu</td>
+			<td>Ubuntu</td>
+		</tr>
+		<tr>
+			<th>Fedora</th>
+			<td>Linux && Fedora</td>
+			<td>Fedora</td>
+		</tr>
+		<tr>
+			<th>Arch</th>
+			<td>Arch Linux</td>
+			<td>Arch</td>
+		</tr>
+		<tr>
+			<th>SUSE</th>
+			<td>Linux && SUSE</td>
+			<td>SUSE</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+
+<table>
+<thead>
+<tr>
+	<th>Vendors</th>
+	<th>Serials</th>
+	<th>Token</th>
+	<th>Description</th>
+</tr>
+</thead>
+<caption>Device</caption>
+<tbody>
+		<tr>
+			<th rowspan="8">Samsung</th>
+			<th>Galaxy S3</th>
+			<td>GT-I9300 || GT-I9305 || GT-I9308 || GT-I939 || SGH-T999</td>
+			<td>i9300,i9305 for Japan,i9308 for TD-CDMA,i939 for CDMA, SGH-T999 for T-Mobile</td>
+		</tr>
+		<tr>
+			<th>Galaxy S4</th>
+			<td>GT-I9500 || GT-I9502 || GT-I9505 || GT-I9508 || SCH-I959</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Galaxy Note2</th>
+			<td>GT-N7100 || GT-N7102 || GT-N7108 || GT-N719 || SHV-E250 || SPH-L900 || SCH-R950</td>
+			<td>N719 for China Telecom with dual-SIM, SPH-L900 for Sprint</td>
+		</tr>
+		<tr>
+			<th>Galaxy Note</th>
+			<td>GT-N7000 || GT-I9228 || GT-I889 || GT-I9220</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Galaxy S3Mini</th>
+			<td>GT-I8190</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Galaxy Premier</th>
+			<td>GT-I9260 || GT-I9268</td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th rowspan="4">Google</th>
+			<th>Nexus One</th>
+			<td>Nexus One</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Nexus S</th>
+			<td>Nexus S</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Galaxy Nexus</th>
+			<td>Galaxy Nexus</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Nexus 4</th>
+			<td>Nexus 4</td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th rowspan="11">HTC</th>
+			<th>EVO 3D</th>
+			<td>X515m || X515E || HTC_EVO || EVO3D || EVO 3D || PG86100</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>EVO Design</th>
+			<td>EVO Design || EVODesign || PH44100</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<th>One X/X+/S720e</th>
+			<td>One X || One_X || OneXplus || PJ83100 || PM63100 || S720e</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>J/J Butterfly</th>
+			<td>ISW13HT || Z321e || Butterfly</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>T528 One SU</th>
+			<td>HTCT528 || HTC T528</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>G14/18/21 Sensation XL/XE</th>
+			<td>Sensation || Z710 || Runnymede || X315e || X315b || Z715e</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>8S</th>
+			<td>8S by HTC || HTC A620t</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>8X</th>
+			<td>8X by HTC || HTC C620t</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>ONE</th>
+			<td>HTC 802 || HTC_802 || HTC_PN071</td>
+			<td>Also known as HTC M7, for 802t for ChinaMobile, 802w for Unicom, 802d for Telecom</td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th>Huawei</th>
+			<th>Ascend P1 U/T920x</th>
+			<td>HuaweiU9200 || HuaweiT9200</td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th rowspan="3">Meizu</th>
+			<th>M9</th>
+			<td>meizu_m9</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>MX</th>
+			<td>MEIZU MX</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>MX2</th>
+			<td></td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th rowspan="2">MIUI</th>
+			<th>MI 1</th>
+			<td>MI-ONE</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>MI 2</th>
+			<td>MI 2</td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th rowspan="10">Sony Ericsson</th>
+			<th>Xperia Z L36h</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Xperia T LT30p</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Xperia ZL L35h</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Xperia SP M35h</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Xperia TX LT29i</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Xperia ion LT28i/h</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Xperia Acro S LT26w</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Xperia VC LT25c</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Xperia SL LT26ii</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Xperia S LT26i</th>
+			<td></td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th rowspan="4">Motorola</th>
+			<th>Droid RAZR XT928</th>
+			<td>XT928</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>RAZR V MT887</th>
+			<td>MT887</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>MT917</th>
+			<td>MT917</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>MT870</th>
+			<td>MT870</td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th rowspan="5">LG</th>
+			<th>Optimus G Pro F240k</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Optimus G E971/975</th>
+			<td>LG-E971 || LG-E975</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Optimus 4x HD P880</th>
+			<td>LG-P880</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Optimus Vu 2 F200</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Optimus Vu P895/F100</th>
+			<td> LG-F100</td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th rowspan="4">ZTE</th>
+			<th>Grand S V988</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Grand Memo N/U5</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Grand Era V/U985</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Grand X V987/N970/U970</th>
+			<td>Grand X || U970 || ZTE-Mimosa</td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th>ASUS</th>
+			<th>Padfone</th>
+			<td>PadFone</td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th rowspan="2">Lenovo</th>
+			<th>K900</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>K860</th>
+			<td>Lenovo K860</td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th rowspan="2">Coolpad</th>
+			<th>9960</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>8730</th>
+			<td>CoolPad8730</td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th rowspan="2">Gionee</th>
+			<th>GN878</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>E3</th>
+			<td></td>
+			<td></td>
+		</tr>
+</tbody>
+<tbody>
+		<tr>
+			<th rowspan="3">K-Touch</th>
+			<th>V5</th>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>V8</th>
+			<td></td>
+			<td></td>
+		</tr>
+</tbody>
+</table>
